@@ -1,0 +1,104 @@
+.first {
+  width: 100vw;
+  height: 70vh;
+}
+.first__main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.first__promo {
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.first__show {
+  border-bottom: 2px solid black;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.first__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first__cards {
+  display: flex;
+  gap: 20px;
+}
+
+.first__card {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.imgBox {
+  height: fit-content;
+}
+
+.imgBox:hover {
+  background-color: black;
+}
+
+.imgBox > img {
+  width: 100%;
+  height: fit-content;
+}
+
+.imgBox > img:hover {
+  opacity: 0.5;
+}
+
+.first__description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.first__description > p {
+  font-weight: 700;
+}
+
+.first__description > p:hover {
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.first__description > span {
+  font-size: 13px;
+  color: #777;
+}
+
+.first__description > span:hover {
+  border-bottom: 1px solid #777;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .first {
+    max-width: 375px;
+    margin: 0 auto;
+    height: auto;
+  }
+  .first__cards {
+    overflow: hidden;
+  }
+
+  .first__card {
+    width: 100%;
+  }
+
+  .imgBox > img {
+    width: 375px;
+  }
+}

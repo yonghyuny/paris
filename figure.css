@@ -1,0 +1,68 @@
+figure {
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.imgBox {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.imgBox__back {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.imgBox__back > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+
+.imgBox__back > img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.dots > span {
+  background-color: #777;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+.dots > span:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+  figure {
+    max-width: 375px;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .imgBox {
+    overflow: hidden;
+  }
+  .imgBox__back > img {
+    width: 375px;
+  }
+
+  .dots {
+    display: none;
+  }
+}

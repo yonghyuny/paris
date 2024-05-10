@@ -1,0 +1,112 @@
+.fifth {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.fifth__title {
+  width: 100%;
+
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.title__site {
+  font-weight: 900;
+  font-size: 23px;
+}
+
+.title__name {
+  font-size: 13px;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+
+.fifth__grid {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 2fr);
+  gap: 20px;
+}
+
+.fifth__card {
+  width: 100%;
+  position: relative;
+}
+
+.fifth__imgBox {
+  width: 100%;
+}
+
+.fifth__imgBox > img {
+  width: 100%;
+}
+
+.fifth__imgBox > img:hover {
+  opacity: 0.5;
+}
+
+.fifth__text {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+}
+
+.fifth__text:hover {
+  opacity: 0.8;
+}
+
+.fifth__button {
+  background-color: rgb(2, 53, 134);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  color: white;
+  padding: 20px;
+}
+
+.fifth__button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .fifth {
+    max-width: 375px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .fifth__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  .none {
+    display: none;
+  }
+
+  .fifth__button {
+    padding: 10px;
+    font-size: 13px;
+  }
+}
